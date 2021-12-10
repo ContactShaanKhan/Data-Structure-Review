@@ -100,11 +100,6 @@ class TreeNode
         Q.left = temp;
     }
 
-    public static int getHeight(TreeNode root) 
-    {
-        return (root == null)? 0 : Math.max( getHeight(root.left) , getHeight(root.right) ) + 1;
-    }
-
     // The print Helper is a pre-order traversal
     private void printHelper(TreeNode node, StringBuilder out)
     {

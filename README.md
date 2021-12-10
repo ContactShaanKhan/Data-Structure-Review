@@ -21,5 +21,6 @@ Current List of Reviews:
 &emsp;-> Quick Sort    
 &emsp;-> Selection Sort    
 /Tree Review  
-&emsp;-> Tree Rotation (Left and Right)    
+&emsp;-> Tree Rotation (Left and Right)  
+&emsp;-> Tree Depth    
 
