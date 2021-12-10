@@ -20,4 +20,6 @@ Current List of Reviews:
 &nbsp;-> Insertion Sort    
 &nbsp;-> Quick Sort    
 &nbsp;-> Selection Sort    
+/Tree Review  
+&nbsp;-> Tree Rotation (Left and Right)    
 
