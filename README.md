@@ -7,7 +7,7 @@ intended action (Sorting via Heapsort in the case).
 
 
 Current List of Reviews (and sub-reviews - meaning that review contains review of the sub-review specified):
-1. HeapSort
-  a. Enum
-3. Chained Hashing
+1. HeapSort  
+a. Enum
+3. Chained Hashing  
   a. Linked-Lists
