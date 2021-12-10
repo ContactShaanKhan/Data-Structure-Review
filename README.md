@@ -22,5 +22,13 @@ Current List of Reviews:
 &emsp;-> Selection Sort    
 /Tree Review  
 &emsp;-> Tree Rotation (Left and Right)  
-&emsp;-> Tree Depth    
+&emsp;-> Tree Depth   
 
+Future Plans:
+1. B-Trees
+2. Double Hashing
+3. Linear/Quadratic Hashing
+4. Linked-Lists
+5. Stacks
+6. Queues
+7. Red Black Tree
