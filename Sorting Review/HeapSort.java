@@ -127,8 +127,12 @@ class Heap
 
         for(int i = arr.length - 1; i >= 0; i--)
         {
+            // Place largest number at the end (We know its the largest b/c its a property of max-heap)
+            // Also space the last index number at the start
             h.swap(0, i);
+            // Decrement the size of the effective heap
             h.size -= 1;
+            // Fix the heap
             h.max_heapify(0);
         }
     }
