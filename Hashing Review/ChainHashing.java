@@ -112,6 +112,9 @@ class HashTable
                 else
                     prev.next = ptr.next;
 
+                // Decrement current size
+                this.currentSize -= 1;
+
                 return val;
             }
 
