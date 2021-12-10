@@ -27,6 +27,7 @@ public class SelectionSort
             swap(arr, min_index, i);
         }
     }
+    
     public static void main(String[] args) 
     {
         // Selection Sort

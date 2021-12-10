@@ -24,6 +24,7 @@ public class InsertionSort
             arr[k + 1] = key;
         }
     }
+    
     public static void main(String... args)
     {
         // Insertion Sort

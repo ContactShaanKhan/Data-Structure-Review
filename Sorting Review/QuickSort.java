@@ -60,6 +60,7 @@ public class QuickSort
     {
         qsort(arr, 0, arr.length - 1);
     }
+    
     public static void main(String[] args) 
     {
         int[] arr = { 10, 13, 12, 7, 50, 25, 1, 72, 77, 31, 32, 19, 69, 19, 2 };
