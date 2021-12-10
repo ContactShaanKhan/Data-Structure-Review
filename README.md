@@ -12,12 +12,12 @@ If you wish to see another topic in this review, submit an issue with the new to
 Current List of Reviews:  
 
 /Hashing Review  
-&nbsp;-> Chained Hashing    
-/Miscellaneoud  
-&nbsp;-> Enum    
+&emsp;-> Chained Hashing    
+/Miscellaneous  
+&emsp;-> Enum    
 /Sorting Review  
-&nbsp;-> Heap Sort    
-&nbsp;-> Insertion Sort    
-&nbsp;-> Quick Sort    
-&nbsp;-> Selection Sort    
+&emsp;-> Heap Sort    
+&emsp;-> Insertion Sort    
+&emsp;-> Quick Sort    
+&emsp;-> Selection Sort    
 
