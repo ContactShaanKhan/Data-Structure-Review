@@ -9,26 +9,30 @@ I encourage you to fork the repo, create your own review, and then submit a pull
 
 If you wish to see another topic in this review, submit an issue with the new topic in mind.    
 
-Current List of Reviews:  
+## Current List of Reviews:  
 
-/Hashing Review  
-&emsp;-> Chained Hashing    
-/Miscellaneous  
-&emsp;-> Enum    
-/Sorting Review  
-&emsp;-> Heap Sort    
-&emsp;-> Insertion Sort    
-&emsp;-> Quick Sort    
-&emsp;-> Selection Sort    
-/Tree Review  
-&emsp;-> Tree Rotation (Left and Right)  
-&emsp;-> Tree Depth   
+- Hashing Review  
+  - Chained Hashing    
+- Miscellaneous  
+  - Enum    
+- Sorting Review  
+  - Heap Sort    
+  - Insertion Sort    
+  - Quick Sort    
+  - Selection Sort    
+- Tree Review  
+  - Tree Rotation (Left and Right)  
+  - Tree Depth   
 
-Future Plans:
-1. B-Trees
-2. Double Hashing
-3. Linear/Quadratic Hashing
-4. Linked-Lists
-5. Stacks
-6. Queues
-7. Red Black Tree
+## Future Plans:
+- B-Trees
+- Double Hashing
+- Linear/Quadratic Hashing
+- Linked-Lists
+- Stacks
+- Queues
+- Red Black Tree
+- MST (Kruskals and Prim)
+- Shortest Path (Dijkstras)
+- Depth First
+- Breadth First
