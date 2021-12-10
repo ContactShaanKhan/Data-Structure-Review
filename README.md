@@ -13,6 +13,8 @@ Current List of Reviews:
 
 /Hashing Review  
 &nbsp;-> Chained Hashing    
+/Miscellaneoud  
+&nbsp;-> Enum    
 /Sorting Review  
 &nbsp;-> Heap Sort    
 &nbsp;-> Insertion Sort    
