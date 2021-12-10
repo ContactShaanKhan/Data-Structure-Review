@@ -15,3 +15,7 @@ Current List of Reviews:
 &nbsp;-> Chained Hashing    
 /Sorting Review  
 &nbsp;-> Heap Sort    
+&nbsp;-> Insertion Sort    
+&nbsp;-> Quick Sort    
+&nbsp;-> Selection Sort    
+
