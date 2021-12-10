@@ -6,6 +6,8 @@ Each java file has a specific topic, such as `HeapSort.java`, and aims to provid
 intended action (Sorting via Heapsort in the case).
 
 
-Current List of Reviews:
+Current List of Reviews (and sub-reviews - meaning that review contains review of the sub-review specified):
 1. HeapSort
-2. Chained Hashing
+  a. Enum
+3. Chained Hashing
+  a. Linked-Lists
