@@ -32,9 +32,6 @@ If you wish to see another topic in this review, submit an issue with the new to
 - B-Trees
 - Double Hashing
 - Linear/Quadratic Hashing
-- Linked-Lists
-- Stacks
-- Queues
 - Red Black Tree
 - MST (Kruskals and Prim)
 - Shortest Path (Dijkstras)
