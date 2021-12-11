@@ -16,7 +16,8 @@ If you wish to see another topic in this review, submit an issue with the new to
   - Queue <sub>(Diwen)</sub>
   - Stack <sub>(Diwen)</sub>    
 - Hashing Review  
-  - Chained Hashing <sub>(Shaan)</sub>     
+  - Chained Hashing <sub>(Shaan)</sub> 
+  - Double Hashing <sub>(Shaan)</sub>    
 - Miscellaneous Review  
   - Enum <sub>(Shaan)</sub>    
 - Sorting Review  
@@ -30,7 +31,6 @@ If you wish to see another topic in this review, submit an issue with the new to
 
 ## Future Plans:
 - B-Trees
-- Double Hashing
 - Linear/Quadratic Hashing
 - Red Black Tree
 - MST (Kruskals and Prim)
