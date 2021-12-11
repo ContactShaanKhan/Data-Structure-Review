@@ -51,10 +51,10 @@ class Heap
                 return (int) ((index - 1) / 2);
         
             case leftChild:
-                return 2 * index;
+                return 2 * index + 1;
 
             case rightChild:
-                return 2 * index + 1;
+                return 2 * index + 2;
 
             default:
             case Self:
