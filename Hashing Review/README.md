@@ -12,9 +12,9 @@
 `Linear hashing`, `Quadratic hashing`, and `Double hashing` are all extremely similar.  
 You will notice in the code that the only difference between these three is the getInsertionIndex() method.    
 #### Here is how they differ with the probe sequence:
-- Double Hashing: (h1(key) + i * h2(key)) % maxSize
-- Linear Hashing (Linear Probe): (h1(key) + i * 1) % maxSize 
-- Quadratic Hashing (Quadratic Probe): (h1(key) + i<sup>2</sup>) % maxSize 
+- Double Hashing: `index = (h1(key) + (i * h2(key))) % maxSize`
+- Linear Hashing (Linear Probe): `index = (h1(key) + i) % maxSize`
+- Quadratic Hashing (Quadratic Probe): `index = (h1(key) + (i * i)) % maxSize` 
 
 `Chain hashing` is the most different, there is no i value with getInsertionIndex() since it only picks an index once and then appends it the the chain at that index.    
 
