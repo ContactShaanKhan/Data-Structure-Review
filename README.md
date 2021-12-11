@@ -33,7 +33,6 @@ If you wish to see another topic in this review, submit an issue with the new to
 
 ## Future Plans:
 - B-Trees
-- Linear/Quadratic Hashing
 - Red Black Tree
 - MST (Kruskals and Prim)
 - Shortest Path (Dijkstras)
