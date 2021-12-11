@@ -17,7 +17,9 @@ If you wish to see another topic in this review, submit an issue with the new to
   - Stack <sub>(Diwen)</sub>    
 - Hashing Review  
   - Chained Hashing <sub>(Shaan)</sub> 
-  - Double Hashing <sub>(Shaan)</sub>    
+  - Double Hashing <sub>(Shaan)</sub>
+  - Linear Hashing <sub>(Shaan)</sub>  
+  - Quadratic Hashing <sub>(Shaan)</sub>        
 - Miscellaneous Review  
   - Enum <sub>(Shaan)</sub>    
 - Sorting Review  

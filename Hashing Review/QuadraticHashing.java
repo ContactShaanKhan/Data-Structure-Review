@@ -2,12 +2,12 @@ import java.util.Arrays;
 import java.util.function.Function;
 
 // Stores key value pair
-class DblHashNode 
+class QuadHashNode 
 {
     public int key;
     public String val;
 
-    public DblHashNode(int key, String val)
+    public QuadHashNode(int key, String val)
     {
         this.key = key;
         this.val = val;
@@ -20,19 +20,18 @@ class DblHashNode
     }
 }
 
-class DblHashTable 
+class QuadHashTable 
 {
     private int currentSize, maxSize;
-    private DblHashNode[] table;
-    private Function<Integer, Integer> h1, h2;
+    private QuadHashNode[] table;
+    private Function<Integer, Integer> h1;
 
-    public DblHashTable(int size, Function<Integer, Integer> h1, Function<Integer, Integer> h2) 
+    public QuadHashTable(int size, Function<Integer, Integer> h1) 
     {
         this.currentSize = 0;
         this.maxSize = size;
-        this.table = new DblHashNode[size];
+        this.table = new QuadHashNode[size];
         this.h1 = h1;
-        this.h2 = h2;
     }
 
     public boolean isEmpty()
@@ -43,7 +42,7 @@ class DblHashTable
     // Takes in key and probenum, returns index
     public int getInsertionIndex(int key, int probenum)
     {
-        return (h1.apply(key) + (probenum * h2.apply(key))) % this.maxSize;
+        return (h1.apply(key) + ((int) Math.pow(probenum, 2) )) % this.maxSize;
     }
 
     // Remember - no duplicate keys!
@@ -59,7 +58,7 @@ class DblHashTable
         }
 
         // Create the node
-        DblHashNode newNode = new DblHashNode(key, val);
+        QuadHashNode newNode = new QuadHashNode(key, val);
 
         // Quick way to make sure we don't loop infinitely
         // Best way would be to check if we ever reach a duplicate element
@@ -147,7 +146,7 @@ class DblHashTable
     }
 }
 
-public class DoubleHashing 
+public class QuadraticHashing 
 {
     public static void main(String... args)
     {
@@ -160,10 +159,9 @@ public class DoubleHashing
         // Create the hash Function
         // Simply set it to multiply the key by 19, and add 12
         Function<Integer, Integer> h1 = (k) -> (k * 19 + 12);
-        Function<Integer, Integer> h2 = (k) -> (k * 2);
 
         // Create a hashtable
-        DblHashTable tbl = new DblHashTable(size, h1, h2);
+        QuadHashTable tbl = new QuadHashTable(size, h1);
 
         // Put elements we want to insert into an array for simplicity
         String[] arr = {"I", "Love", "My", "Dog", "Named", "Shadow", "So", "Much", "!"};
