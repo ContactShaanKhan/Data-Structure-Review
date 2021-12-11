@@ -11,9 +11,13 @@ If you wish to see another topic in this review, submit an issue with the new to
 
 ## Current List of Reviews:  
 
+- Data Structure Review  
+  - Linked List
+  - Queue
+  - Stack    
 - Hashing Review  
   - Chained Hashing    
-- Miscellaneous  
+- Miscellaneous Review  
   - Enum    
 - Sorting Review  
   - Heap Sort    
@@ -36,4 +40,5 @@ If you wish to see another topic in this review, submit an issue with the new to
 - Shortest Path (Dijkstras)
 - Depth First
 - Breadth First
+- Merge Sort  
 - Pre-order, Post-order, In-order
