@@ -12,21 +12,21 @@ If you wish to see another topic in this review, submit an issue with the new to
 ## Current List of Reviews:  
 
 - Data Structure Review  
-  - Linked List
-  - Queue
-  - Stack    
+  - Linked List (kalos)
+  - Queue (kalos)
+  - Stack (kalos)    
 - Hashing Review  
-  - Chained Hashing    
+  - Chained Hashing (Shaan)    
 - Miscellaneous Review  
-  - Enum    
+  - Enum (Shaan)    
 - Sorting Review  
-  - Heap Sort    
-  - Insertion Sort    
-  - Quick Sort    
-  - Selection Sort    
+  - Heap Sort (Shaan)    
+  - Insertion Sort (Shaan)    
+  - Quick Sort (Shaan)    
+  - Selection Sort (Shaan)    
 - Tree Review  
-  - Tree Rotation (Left and Right)  
-  - Tree Depth   
+  - Tree Rotation (Left and Right) (Shaan)  
+  - Tree Depth (Shaan)   
 
 ## Future Plans:
 - B-Trees
