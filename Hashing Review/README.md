@@ -5,7 +5,8 @@
 - Collision Resolution: If/when we collide, how are we resolving?  This can be achieved many way:
   - Linear Probing (Linear Hashing)
   - Quadratic Probing (Quadratic Hashing)
-  - Double Hashing      
+  - Double Hashing
+  - Chain Hashing      
 
 
 `Linear hashing`, `Quadratic hashing`, and `Double hashing` are all extremely similar.  
@@ -15,7 +16,7 @@ You will notice in the code that the only difference between these three is the 
 - Linear Hashing (Linear Probe): (h1(key) + i * 1) % maxSize 
 - Quadratic Hashing (Quadratic Probe): (h1(key) + i<sup>2</sup>) % maxSize 
 
-Chained hashing is the most different, there is no i value with getInsertionIndex() since it only picks an index once and then appends it the the chain at that index.    
+`Chain hashing` is the most different, there is no i value with getInsertionIndex() since it only picks an index once and then appends it the the chain at that index.    
 
 #### Important Notes:
 - No duplicated keys!
