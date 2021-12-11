@@ -170,7 +170,7 @@ public class RedBlackTree  {
     	bst.insert(25);
     	bst.insert(40);
     	bst.insert(80);
-    	bst.deleteNode(25);
+    	//bst.deleteNode(25);
     	bst.printInorder();
 	}
 }

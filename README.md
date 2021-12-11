@@ -14,7 +14,13 @@ If you wish to see another topic in this review, submit an issue with the new to
 - Data Structure Review  
   - Linked List <sub>(Diwen)</sub>
   - Queue <sub>(Diwen)</sub>
-  - Stack <sub>(Diwen)</sub>    
+  - Stack <sub>(Diwen)</sub>  
+- Graph Review
+  - BFS <sub>(Diwen)</sub>
+  - DFS <sub>(Diwen)</sub>
+  - Inorder <sub>(Diwen)</sub>
+  - Postorder <sub>(Diwen)</sub>
+  - Preorder <sub>(Diwen)</sub>    
 - Hashing Review  
   - Chained Hashing <sub>(Shaan)</sub> 
   - Double Hashing <sub>(Shaan)</sub>
@@ -28,16 +34,13 @@ If you wish to see another topic in this review, submit an issue with the new to
   - Quick Sort <sub>(Shaan)</sub>    
   - Selection Sort <sub>(Shaan)</sub>    
 - Tree Review  
+  - Red-Black Tree <sub>(Diwen)</sub>
   - Tree Rotation (Left and Right) <sub>(Shaan)</sub>  
   - Tree Depth <sub>(Shaan)</sub>   
 
 ## Future Plans:
 - B-Trees
-- Red Black Tree
 - MST (Kruskals and Prim)
 - Shortest Path (Dijkstras)
-- Depth First
-- Breadth First
 - Merge Sort  
 - Bubble Sort
-- Pre-order, Post-order, In-order
