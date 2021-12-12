@@ -1,7 +1,7 @@
 # Hashing Notes:
 
 #### In hashing there are two main concepts:
-- Collision Resistance: We want to resist and collisions (We can achieve this with well designed hash functions)
+- Collision Resistance: We want to resist collisions (We can achieve this with well designed hash functions)
 - Collision Resolution: If/when we collide, how are we resolving?  This can be achieved many way:
   - Linear Probing (Linear Hashing)
   - Quadratic Probing (Quadratic Hashing)
