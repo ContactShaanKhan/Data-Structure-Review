@@ -1,13 +1,27 @@
+class LLNode{
+    public int value;
+    public LLNode next;
+    
+    public LLNode(int value){
+        this.value = value;
+    }
+
+    public LLNode(int value, LLNode next){
+        this.value = value;
+        this.next = next;
+    }
+}
+
 // "static void main" must be defined in a public class.
 public class LinkedList {
-    private Node head;
+    private LLNode head;
     
     public void addLastNode(int value){
-        Node newNode = new Node(value);
+        LLNode newNode = new LLNode(value);
         if (head == null){
             head = newNode;
         }else{
-            Node current = head;
+            LLNode current = head;
             while (current.next!=null){
                 current = current.next;
             }
@@ -16,12 +30,12 @@ public class LinkedList {
     }
     
     public void addTargetNode(int targetValue, int newValue){
-        Node newNode = new Node(newValue);
+        LLNode newNode = new LLNode(newValue);
         if (head == null){
             head = newNode;
         }else{
-            Node current = head;
-            Node previous = null;
+            LLNode current = head;
+            LLNode previous = null;
             while(current.value != targetValue){
                 previous = current;
                 current = current.next;
@@ -30,10 +44,10 @@ public class LinkedList {
             newNode.next = current;
         }
     }
-    
-    public Node deletedLastNode(){
-        Node current = head;
-        Node previous = null;
+
+    public LLNode deletedLastNode(){
+        LLNode current = head;
+        LLNode previous = null;
         while (current.next != null){
             previous = current;
             current = current.next;
@@ -42,9 +56,9 @@ public class LinkedList {
         return current;
     }
     
-    public Node deletedTargetNode(int value){
-        Node current = head;
-        Node previous = null;
+    public LLNode deletedTargetNode(int value){
+        LLNode current = head;
+        LLNode previous = null;
         while (current.value != value){
             previous = current;
             current = current.next;
@@ -55,11 +69,12 @@ public class LinkedList {
     
     public String toString(){
         String temp = "";
-        Node current = head;
+        LLNode current = head;
         while (current != null){
-            temp = temp + current.value;
+            temp = temp + current.value + " -> ";
             current = current.next;
         }
+        temp += " null";
         return temp;
     }
     public static void main(String[] args) {
@@ -84,13 +99,5 @@ public class LinkedList {
         temp.deletedTargetNode(6);
         System.out.println(temp.toString());
         //print 1578
-    }
-}
-class Node{
-    public int value;
-    public Node next;
-    
-    public Node(int value){
-        this.value = value;
     }
 }
