@@ -44,6 +44,52 @@ public class LinkedList {
         return (sum / numElem);
     }
 
+    /**
+     * Insert an element into a sorted linked list so as to preserve order
+     * 
+     * precondition: The list is sorted
+     * postcondition: The list is sorted aswell, with new node.
+     */
+    public void insertPreserveOrder(int newValue) {
+        // Create the new node
+        LLNode newNode = new LLNode(newValue);
+
+        // Check if empty
+        if (head == null) {
+            throw new IllegalArgumentException("Is Empty!");
+        }
+
+        // Check if one element
+        else if (head.next == null) {
+            // Place before head
+            if (newValue <= head.value) {
+                newNode.next = head;
+                head = newNode;
+            }
+            // Place after the head
+            else {
+                head.next = newNode;
+            }
+        }
+
+        // Otherwise traverse as normal
+        else {
+            LLNode ptr = head.next;
+            LLNode prev = head;
+
+            while(ptr != null) {
+                if(newValue <= ptr.value) {
+                    prev.next = newNode;
+                    newNode.next = ptr;
+                    break;
+                }
+
+                ptr = ptr.next;
+                prev = prev.next;
+            }
+        }
+    }
+
     // Method to remove all instances of a target value
     public void removeAllInstances(int targetValue) {
         // Check if empty
