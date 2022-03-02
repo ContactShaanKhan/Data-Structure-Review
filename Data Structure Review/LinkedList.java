@@ -1,12 +1,12 @@
-class LLNode{
+class LLNode {
     public int value;
     public LLNode next;
-    
-    public LLNode(int value){
+
+    public LLNode(int value) {
         this.value = value;
     }
 
-    public LLNode(int value, LLNode next){
+    public LLNode(int value, LLNode next) {
         this.value = value;
         this.next = next;
     }
@@ -15,28 +15,75 @@ class LLNode{
 // "static void main" must be defined in a public class.
 public class LinkedList {
     private LLNode head;
-    
-    public void addLastNode(int value){
+
+    public void addLastNode(int value) {
         LLNode newNode = new LLNode(value);
-        if (head == null){
+        if (head == null) {
             head = newNode;
-        }else{
+        } else {
             LLNode current = head;
-            while (current.next!=null){
+            while (current.next != null) {
                 current = current.next;
             }
             current.next = newNode;
         }
     }
-    
-    public void addTargetNode(int targetValue, int newValue){
+
+    // Find the mean of a singly linked list
+    public double findMean() {
+        double sum = 0.0;
+        double numElem = 0.0;
+
+        for (LLNode ptr = head; ptr != null; ptr = ptr.next) {
+            // Increment the total
+            sum += ptr.value;
+            // Increment the number of elements
+            numElem++;
+        }
+
+        return (sum / numElem);
+    }
+
+    // Method to remove all instances of a target value
+    public void removeAllInstances(int targetValue) {
+        // Check if empty
+        if (head == null) {
+            throw new IllegalArgumentException("Is Empty!");
+        }
+
+        // If one element
+        else if (head.next == null) {
+            if (head.value == targetValue) {
+                head = null;
+            }
+        }
+
+        // If at least 2 elements
+        else {
+            LLNode prev = head;
+            LLNode ptr = head.next;
+
+            while (ptr != null) {
+                if (ptr.value == targetValue) {
+                    // Delete ptr
+                    prev.next = ptr.next;
+                }
+
+                // Increment the pointers
+                prev = prev.next;
+                ptr = ptr.next;
+            }
+        }
+    }
+
+    public void addTargetNode(int targetValue, int newValue) {
         LLNode newNode = new LLNode(newValue);
-        if (head == null){
+        if (head == null) {
             head = newNode;
-        }else{
+        } else {
             LLNode current = head;
             LLNode previous = null;
-            while(current.value != targetValue){
+            while (current.value != targetValue) {
                 previous = current;
                 current = current.next;
             }
@@ -45,38 +92,39 @@ public class LinkedList {
         }
     }
 
-    public LLNode deletedLastNode(){
+    public LLNode deletedLastNode() {
         LLNode current = head;
         LLNode previous = null;
-        while (current.next != null){
+        while (current.next != null) {
             previous = current;
             current = current.next;
         }
         previous.next = null;
         return current;
     }
-    
-    public LLNode deletedTargetNode(int value){
+
+    public LLNode deletedTargetNode(int value) {
         LLNode current = head;
         LLNode previous = null;
-        while (current.value != value){
+        while (current.value != value) {
             previous = current;
             current = current.next;
         }
         previous.next = current.next;
         return current;
     }
-    
-    public String toString(){
+
+    public String toString() {
         String temp = "";
         LLNode current = head;
-        while (current != null){
+        while (current != null) {
             temp = temp + current.value + " -> ";
             current = current.next;
         }
         temp += " null";
         return temp;
     }
+
     public static void main(String[] args) {
         System.out.println("Hello World!");
         LinkedList temp = new LinkedList();
@@ -86,18 +134,18 @@ public class LinkedList {
         temp.addLastNode(8);
         temp.addLastNode(9);
         System.out.println(temp.toString());
-        //print 15789
+        // print 15789
 
         temp.addTargetNode(7, 6);
         System.out.println(temp.toString());
-        //print 156789
+        // print 156789
 
         temp.deletedLastNode();
         System.out.println(temp.toString());
-        //print 15678
-        
+        // print 15678
+
         temp.deletedTargetNode(6);
         System.out.println(temp.toString());
-        //print 1578
+        // print 1578
     }
 }
