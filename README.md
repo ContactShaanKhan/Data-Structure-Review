@@ -17,6 +17,7 @@ If you wish to see another topic in this review, submit an issue with the new to
 
 - Data Structure Review  
   - Linked List 
+  - IntLinkedBag  
   - Queue 
   - Stack 
 - Graph Review
