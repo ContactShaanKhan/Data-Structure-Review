@@ -9,34 +9,38 @@ I encourage you to fork the repo, create your own review, and then submit a pull
 
 If you wish to see another topic in this review, submit an issue with the new topic in mind.    
 
+## Contributors
+* Shaan
+* Diwen
+
 ## Current List of Reviews:  
 
 - Data Structure Review  
-  - Linked List <sub>(Diwen)</sub>
-  - Queue <sub>(Diwen)</sub>
-  - Stack <sub>(Diwen)</sub>  
+  - Linked List 
+  - Queue 
+  - Stack 
 - Graph Review
-  - BFS <sub>(Diwen)</sub>
-  - DFS <sub>(Diwen)</sub>
-  - Inorder <sub>(Diwen)</sub>
-  - Postorder <sub>(Diwen)</sub>
-  - Preorder <sub>(Diwen)</sub>    
+  - BFS 
+  - DFS 
+  - Inorder 
+  - Postorder 
+  - Preorder 
 - Hashing Review  
-  - Chained Hashing <sub>(Shaan)</sub> 
-  - Double Hashing <sub>(Shaan)</sub>
-  - Linear Hashing <sub>(Shaan)</sub>  
-  - Quadratic Hashing <sub>(Shaan)</sub>        
+  - Chained Hashing 
+  - Double Hashing 
+  - Linear Hashing 
+  - Quadratic Hashing 
 - Miscellaneous Review  
-  - Enum <sub>(Shaan)</sub>    
+  - Enum    
 - Sorting Review  
-  - Heap Sort <sub>(Shaan)</sub>    
-  - Insertion Sort <sub>(Shaan)</sub>    
-  - Quick Sort <sub>(Shaan)</sub>    
-  - Selection Sort <sub>(Shaan)</sub>    
+  - Heap Sort     
+  - Insertion Sort   
+  - Quick Sort   
+  - Selection Sort    
 - Tree Review  
-  - Red-Black Tree <sub>(Diwen)</sub>
-  - Tree Rotation (Left and Right) <sub>(Shaan)</sub>  
-  - Tree Depth <sub>(Shaan)</sub>   
+  - Red-Black Tree 
+  - Tree Rotation (Left and Right) 
+  - Tree Depth   
 
 ## Future Plans:
 - B-Trees
