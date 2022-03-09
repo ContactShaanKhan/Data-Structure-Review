@@ -124,4 +124,44 @@ public class IntLinkedBag implements Cloneable {
         }
         return answer;
     }
+
+    @Override
+    public String toString() {
+        String out = "[";
+
+        int index;
+        data.resetCursor();
+        for (index = 0; index < manyItems; index++) {
+            out += " " + data.getNodeData() + "-> ";
+            data.advanceCursor();
+        }
+
+        out += "null ]";
+
+        return out;
+    }
+
+    public static void main (String... args) {
+        IntLinkedBag bag = new IntLinkedBag();
+        IntLinkedBag bag2 = new IntLinkedBag();
+
+        bag.add(1);
+        bag.add(2);
+        bag.add(3);
+        bag.add(4);
+
+        bag2.add(11);
+        bag2.add(12);
+        bag2.add(13);
+        bag2.add(14);
+
+        System.out.println("Separate:");
+        System.out.println(bag);
+        System.out.println(bag2);
+
+        bag.addAll(bag2);
+
+        System.out.println("Combined:");
+        System.out.println(bag);
+    }
 }
