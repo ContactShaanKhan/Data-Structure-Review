@@ -77,8 +77,8 @@ public class LinkedList {
             LLNode ptr = head.next;
             LLNode prev = head;
 
-            while(ptr != null) {
-                if(newValue <= ptr.value) {
+            while (ptr != null) {
+                if (newValue <= ptr.value) {
                     prev.next = newNode;
                     newNode.next = ptr;
                     break;
@@ -160,6 +160,37 @@ public class LinkedList {
         return current;
     }
 
+    // Reversing a singly linked list 3 pointers:
+    public void reverse() {
+        // We want 3 pointers, 1 of the head and 2 of the last element
+
+        // Check if it is empty
+        if (head == null)
+            throw new IllegalArgumentException();
+
+        // If size 1 - do nothing to reverse
+        if (head.next == null)
+            return;
+
+        LLNode prev = null, curr = head, next;
+        
+        // One by one reverse the links
+        while(curr != null) {
+            // Move next ahead
+            next = curr.next;
+            
+            // Set the reversal
+            curr.next = prev;
+            
+            // Move the remaining cursors
+            prev = curr;
+            curr = next;
+        }
+    
+        // Set the head
+        head = prev;
+    }
+
     public String toString() {
         String temp = "";
         LLNode current = head;
@@ -193,5 +224,8 @@ public class LinkedList {
         temp.deletedTargetNode(6);
         System.out.println(temp.toString());
         // print 1578
+
+        temp.reverse();
+        System.out.println(temp.toString());
     }
 }
