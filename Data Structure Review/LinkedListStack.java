@@ -1,6 +1,6 @@
 // "static void main" must be defined in a public class.
-public class Stack {
-    Node root;
+public class LinkedListStack {
+    LLSNode root;
     
     public boolean isEmpty(){
         if (root == null) 
@@ -10,12 +10,12 @@ public class Stack {
     }
     
     public void push(int data){
-        Node newNode = new Node(data);
+        LLSNode newNode = new LLSNode(data);
         if (root == null) {
             root = newNode;
         }
         else {
-            Node temp = root;
+            LLSNode temp = root;
             root = newNode;
             newNode.next = temp;
         }
@@ -45,7 +45,7 @@ public class Stack {
     }
     
     public static void main(String[] args) {
-        Stack sll = new Stack();
+        LinkedListStack sll = new LinkedListStack();
         
         sll.push(10);
         sll.push(20);
@@ -57,11 +57,11 @@ public class Stack {
         System.out.println("Top element is " + sll.peek());
     }
 }
-class Node{
+class LLSNode{
     public int value;
-    public Node next;
+    public LLSNode next;
     
-    public Node(int value){
+    public LLSNode(int value){
         this.value = value;
     }
 }
