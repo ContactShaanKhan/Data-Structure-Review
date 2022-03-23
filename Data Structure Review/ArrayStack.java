@@ -17,7 +17,7 @@ public class ArrayStack {
 
     public void push(int val) throws IllegalArgumentException {
         // Check if the stack is full
-        if (size + 1 == arr.length)
+        if (size + 1 >= arr.length)
             throw new IllegalArgumentException();
 
         arr[size] = val;
