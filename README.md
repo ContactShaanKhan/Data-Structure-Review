@@ -19,7 +19,8 @@ If you wish to see another topic in this review, submit an issue with the new to
   - Linked List 
   - IntLinkedBag  
   - Queue 
-  - Stack 
+  - Linked List Stack
+  - Array Stack 
 - Graph Review
   - BFS 
   - DFS 
