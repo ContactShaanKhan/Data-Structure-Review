@@ -58,7 +58,6 @@ public class CircularArrayQueue implements QueueInterface<Integer> {
 
         out.append("Front [");
 
-        // We assume type T has a toString
         for (int i = front; i != rear; i = (i + 1) % capacity) {
             out.append(" (" + arr[i] + ")");
         }
