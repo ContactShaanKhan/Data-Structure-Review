@@ -50,6 +50,7 @@ If you wish to see another topic in this review, submit an issue with the new to
 - Tree Review  
   - Red-Black Tree 
   - Tree Rotation (Left and Right) 
+  - Compare Binary Trees
   - Tree Depth   
 
 ## Future Plans:
