@@ -51,6 +51,7 @@ If you wish to see another topic in this review, submit an issue with the new to
   - Red-Black Tree 
   - Tree Rotation (Left and Right) 
   - Compare Binary Trees
+  - Remove all Leaves
   - Tree Depth   
 
 ## Future Plans:
