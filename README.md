@@ -48,6 +48,7 @@ If you wish to see another topic in this review, submit an issue with the new to
   - Quick Sort   
   - Selection Sort    
 - Tree Review  
+  - Binary Search Tree (Insertion and Removal) 
   - Red-Black Tree 
   - Tree Rotation (Left and Right) 
   - Compare Binary Trees
