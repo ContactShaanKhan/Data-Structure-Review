@@ -7,8 +7,7 @@ public class BinarySearchTree {
     }
 
     // The print Helper is a pre-order traversal
-    private void printHelper(BinarySearchTree node, StringBuilder out)
-    {
+    private void printHelper(BinarySearchTree node, StringBuilder out) {
         if (node == null)
             return;
         out.append(node.val + " ");
@@ -17,8 +16,7 @@ public class BinarySearchTree {
     }
 
     @Override
-    public String toString()
-    {
+    public String toString() {
         StringBuilder out = new StringBuilder();
 
         printHelper(this, out);
@@ -28,7 +26,7 @@ public class BinarySearchTree {
 
     public void insert(int val) {
         BinarySearchTree root = this;
-        
+
         BinarySearchTree ptr = root;
         while (ptr != null) {
             // Not allowed
@@ -39,8 +37,7 @@ public class BinarySearchTree {
                 if (ptr.left == null) {
                     ptr.left = new BinarySearchTree(val);
                     return;
-                }
-                else {
+                } else {
                     ptr = ptr.left;
                 }
             }
@@ -49,25 +46,21 @@ public class BinarySearchTree {
                 if (ptr.right == null) {
                     ptr.right = new BinarySearchTree(val);
                     return;
-                }
-                else {
+                } else {
                     ptr = ptr.right;
                 }
             }
         }
     }
-    
-    public int inOrderSuccessor(BinarySearchTree root)
-    {
+
+    public int inOrderSuccessor(BinarySearchTree root) {
         int minv = root.val;
-        while (root.left != null)
-        {
+        while (root.left != null) {
             minv = root.left.val;
             root = root.left;
         }
         return minv;
     }
-
 
     // Returns the new tree
     public BinarySearchTree remove(int val) {
@@ -86,14 +79,12 @@ public class BinarySearchTree {
                     // If we are removing the root
                     if (parent == null) {
                         return null;
-                    }
-                    else {
+                    } else {
                         // If this was the left child
                         if (parent.left.val == val) {
                             parent.left = null;
                             return root;
-                        }
-                        else {
+                        } else {
                             parent.right = null;
                             return root;
                         }
@@ -110,8 +101,7 @@ public class BinarySearchTree {
                     else if (parent.left.val == val) {
                         parent.left = ptr.right;
                         return root;
-                    }
-                    else {
+                    } else {
                         parent.right = ptr.right;
                         return root;
                     }
@@ -126,8 +116,7 @@ public class BinarySearchTree {
                     else if (parent.left.val == val) {
                         parent.left = ptr.left;
                         return root;
-                    }
-                    else {
+                    } else {
                         parent.right = ptr.left;
                         return root;
                     }
@@ -136,33 +125,23 @@ public class BinarySearchTree {
                 // Case 3: Two children:
                 else {
                     // Find in order successor
-                    if (root.val == val) {
-                        int temp = inOrderSuccessor(root.right);
-                        
-                        // Now delete that node
-                        remove(temp);
+                    int temp = inOrderSuccessor(ptr.right);
 
-                        root.val = temp;
-                        return root;
-                    }
-                    else if (parent.left.val == val) {
-                        int temp = inOrderSuccessor(ptr.right);
+                    // Now delete that node
+                    remove(temp);
 
-                        remove(temp);
+                    ptr.val = temp;
+                    return root;
 
-                        ptr.val = temp;
-                        return root;
-                    }
                 }
             }
-                
+
             // The rest is responsible for traversing
 
             else if (val < ptr.val) {
                 if (ptr.left == null) {
                     throw new IllegalAccessError();
-                }
-                else {
+                } else {
                     parent = ptr;
                     ptr = ptr.left;
                 }
@@ -171,8 +150,7 @@ public class BinarySearchTree {
             else {
                 if (ptr.right == null) {
                     throw new IllegalAccessError();
-                }
-                else {
+                } else {
                     parent = ptr;
                     ptr = ptr.right;
                 }
@@ -182,7 +160,7 @@ public class BinarySearchTree {
         throw new IllegalAccessError();
     }
 
-    public static void main (String... args) {
+    public static void main(String... args) {
         BinarySearchTree t = new BinarySearchTree(50);
         t.insert(75);
         t.insert(100);
@@ -191,6 +169,22 @@ public class BinarySearchTree {
         t.insert(30);
         t.insert(60);
 
-        System.out.println("Initial tree:" + t);
+        System.out.println("Initial tree: " + t);
+
+        t = t.remove(50);
+
+        System.out.println("Root removal: " + t);
+
+        t = t.remove(75);
+
+        System.out.println("75 removal: " + t);
+
+        t = t.remove(25);
+
+        System.out.println("25 removal: " + t);
+
+        t = t.remove(100);
+
+        System.out.println("100 removal: " + t);
     }
 }
